@@ -1,0 +1,227 @@
+/**
+ * @description
+ * eye.css
+ * 8/3 columns responsive CSS framework.
+ * Free for usage.
+ *
+ * @author Roman Melnyk <email.rom.melnyk@gmail.com>
+ *
+ * Enjoy responsible!
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	min-height: 100%;
+}
+
+.row, .column {
+	display: block;
+	margin: 0;
+	overflow: hidden;
+}
+
+.row {
+	padding: 0;
+}
+
+.row:after {
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.column {
+	float: left;
+	padding: 0 1em;
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+}
+
+.row.col-center > .column {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.row.col-right > .column {
+	float: right;
+	margin-left: 0;
+}
+
+/* -------------------- wide screen -------------------- */
+@media only screen and (min-width: 1025px) {
+	.column.wide-1 { width: 12.5%; }
+	.column.wide-2 { width: 25%; }
+	.column.wide-3 { width: 37.5%; }
+	.column.wide-4 { width: 50%; }
+	.column.wide-5 { width: 62.5%; }
+	.column.wide-6 { width: 75%; }
+	.column.wide-7 { width: 87.5%; }
+	.column.wide-8 { width: 100%; }
+	.column.wide-1-of-3 { width: 33.33333%; }
+	.column.wide-2-of-3 { width: 66.66667%; }
+
+	.column.wide-offs-1 { margin-left: 12.5%; }
+	.column.wide-offs-2 { margin-left: 25%; }
+	.column.wide-offs-3 { margin-left: 37.5%; }
+	.column.wide-offs-4 { margin-left: 50%; }
+	.column.wide-offs-5 { margin-left: 62.5%; }
+	.column.wide-offs-6 { margin-left: 75%; }
+	.column.wide-offs-7 { margin-left: 87.5%; }
+	.column.wide-offs-1-of-3 { margin-left: 33.33333%; }
+	.column.wide-offs-2-of-3 { margin-left: 66.66667%; }
+
+	.row.col-right > .column.wide-offs-1 { margin-right: 12.5%; }
+	.row.col-right > .column.wide-offs-2 { margin-right: 25%; }
+	.row.col-right > .column.wide-offs-3 { margin-right: 37.5%; }
+	.row.col-right > .column.wide-offs-4 { margin-right: 50%; }
+	.row.col-right > .column.wide-offs-5 { margin-right: 62.5%; }
+	.row.col-right > .column.wide-offs-6 { margin-right: 75%; }
+	.row.col-right > .column.wide-offs-7 { margin-right: 87.5%; }
+	.row.col-right > .column.wide-offs-1-of-3 { margin-right: 33.33333%; }
+	.row.col-right > .column.wide-offs-2-of-3 { margin-right: 66.66667%; }
+}
+/* -------------- end of the wide screen --------------- */
+
+/* -------------------- medium screen -------------------- */
+@media only screen and (max-width: 1024px) and (min-width: 481px) {
+	.column.med-1 { width: 12.5%; }
+	.column.med-2 { width: 25%; }
+	.column.med-3 { width: 37.5%; }
+	.column.med-4 { width: 50%; }
+	.column.med-5 { width: 62.5%; }
+	.column.med-6 { width: 75%; }
+	.column.med-7 { width: 87.5%; }
+	.column.med-8 { width: 100%; }
+	.column.med-1-of-3 { width: 33.33333%; }
+	.column.med-2-of-3 { width: 66.66667%; }
+
+	.column.med-offs-1 { margin-left: 12.5%; }
+	.column.med-offs-2 { margin-left: 25%; }
+	.column.med-offs-3 { margin-left: 37.5%; }
+	.column.med-offs-4 { margin-left: 50%; }
+	.column.med-offs-5 { margin-left: 62.5%; }
+	.column.med-offs-6 { margin-left: 75%; }
+	.column.med-offs-7 { margin-left: 87.5%; }
+	.column.med-offs-1-of-3 { margin-left: 33.33333%; }
+	.column.med-offs-2-of-3 { margin-left: 66.66667%; }
+
+	.row.col-right > .column.med-offs-1 { margin-right: 12.5%; }
+	.row.col-right > .column.med-offs-2 { margin-right: 25%; }
+	.row.col-right > .column.med-offs-3 { margin-right: 37.5%; }
+	.row.col-right > .column.med-offs-4 { margin-right: 50%; }
+	.row.col-right > .column.med-offs-5 { margin-right: 62.5%; }
+	.row.col-right > .column.med-offs-6 { margin-right: 75%; }
+	.row.col-right > .column.med-offs-7 { margin-right: 87.5%; }
+	.row.col-right > .column.med-offs-1-of-3 { margin-right: 33.33333%; }
+	.row.col-right > .column.med-offs-2-of-3 { margin-right: 66.66667%; }
+}
+/* -------------- end of the medium screen --------------- */
+
+/* -------------------- narrow screen -------------------- */
+@media only screen and (max-width: 480px) {
+	.column.narr-1 { width: 12.5%; }
+	.column.narr-2 { width: 25%; }
+	.column.narr-3 { width: 37.5%; }
+	.column.narr-4 { width: 50%; }
+	.column.narr-5 { width: 62.5%; }
+	.column.narr-6 { width: 75%; }
+	.column.narr-7 { width: 87.5%; }
+	.column.narr-8 { width: 100%; }
+	.column.narr-1-of-3 { width: 33.33333%; }
+	.column.narr-2-of-3 { width: 66.66667%; }
+
+	.column.narr-offs-1 { margin-left: 12.5%; }
+	.column.narr-offs-2 { margin-left: 25%; }
+	.column.narr-offs-3 { margin-left: 37.5%; }
+	.column.narr-offs-4 { margin-left: 50%; }
+	.column.narr-offs-5 { margin-left: 62.5%; }
+	.column.narr-offs-6 { margin-left: 75%; }
+	.column.narr-offs-7 { margin-left: 87.5%; }
+	.column.narr-offs-1-of-3 { margin-left: 33.33333%; }
+	.column.narr-offs-2-of-3 { margin-left: 66.66667%; }
+
+	.row.col-right > .column.narr-offs-1 { margin-right: 12.5%; }
+	.row.col-right > .column.narr-offs-2 { margin-right: 25%; }
+	.row.col-right > .column.narr-offs-3 { margin-right: 37.5%; }
+	.row.col-right > .column.narr-offs-4 { margin-right: 50%; }
+	.row.col-right > .column.narr-offs-5 { margin-right: 62.5%; }
+	.row.col-right > .column.narr-offs-6 { margin-right: 75%; }
+	.row.col-right > .column.narr-offs-7 { margin-right: 87.5%; }
+	.row.col-right > .column.narr-offs-1-of-3 { margin-right: 33.33333%; }
+	.row.col-right > .column.narr-offs-2-of-3 { margin-right: 66.66667%; }
+}
+/* -------------- end of the narrow screen --------------- */
+
+.column.pad-0 { padding: 0; }
+.column.pad-1 { padding: 0 1em; }
+/* ------------- end of the grid definition -------------- */
+
+/* ------------------------ tools ------------------------ */
+.t-center { text-align: center; }
+.t-right { text-align: right; }
+.t-left { text-align: left; }
+
+.fl { float: left; }
+.fr { float: right; }
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+}
+
+.hidden { display: none; }
+/* ------------------- end of the tools ------------------- */
+
+/* ------------------ some normalization ------------------ */
+body, h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+p, div, a, span, label, input { font-size: inherit; }
+body { font-size: 100%; }
+h1 { font-size: 275%; }
+h2 { font-size: 225%; }
+h3 { font-size: 180%; }
+h4 { font-size: 150%; }
+h5 { font-size: 125%; }
+h6 { font-size: 110%; }
+
+h1, h2, h3, h4, h5, h6, p { margin: .5em 0 .2em; }
+
+/*label, span, div, header, section, article, footer, p, h1, h2, h3, h4, h5, h6 { color: inherit; }*/
+* { color: inherit; }
+body { color: rgba(3, 3, 6, 0.76); }
+a { color: rgba(76, 114, 220, 0.93); }
+/* --------------- end of the normalization --------------- */
+
+/* --------------------- form section --------------------- */
+form { display: block; }
+
+input[type=text], input[type=password], textarea {
+	width: 100%;
+	padding: .5em;
+	border-width: 1px;
+	border-style: solid;
+	color: inherit;
+}
+
+input[type=button], input[type=submit] {
+	width: 100%;
+	padding: .5em 1em;
+	text-align: center;
+}
+/* ---------------- end of the form section ---------------- */
+
+/* ================== end of framework CSS ================= */

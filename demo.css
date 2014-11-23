@@ -1,0 +1,28 @@
+body {
+	background-color: #ddd;
+}
+
+section {
+	margin-bottom: 2em;
+	padding: 2em;
+	transition: background-color .5s;
+}
+
+section:hover {
+	background-color: #bba;
+}
+
+/*.description {
+	margin: 1em 0 .5em;
+}*/
+
+/* for demo purposes only */
+.row {
+	background-color: #fff;
+}
+.column {
+	padding: .5em 1em;
+	background-color: #edf;
+	border: 1px solid #dce;
+	border-radius: .4em;
+}
